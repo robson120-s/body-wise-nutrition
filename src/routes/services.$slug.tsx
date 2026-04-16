@@ -42,7 +42,7 @@ export const Route = createFileRoute("/services/$slug")({
 });
 
 function ServiceDetail() {
-  const { service } = Route.useLoaderData();
+  const { service } = Route.useLoaderData() as { service: NonNullable<ReturnType<typeof getService>> };
   return (
     <SiteLayout>
       <section className="bg-gradient-hero">
