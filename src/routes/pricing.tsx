@@ -7,10 +7,10 @@ import { Check, Sparkles } from "lucide-react";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing — Body Wise" },
-      { name: "description", content: "Transparent pricing for personalized nutrition programs. Standard and group packages available." },
-      { property: "og:title", content: "Body Wise Pricing" },
-      { property: "og:description", content: "Choose the program that fits your goals." },
+      { title: "Pricing — Lotus" },
+      { name: "description", content: "Transparent pricing for personalized Lotus nutrition programs. Starter consultations, full Standard programs and discounted Group packages — all with continuous follow-up." },
+      { property: "og:title", content: "Lotus Pricing" },
+      { property: "og:description", content: "Choose the program that fits your goals, your timeline and your budget." },
     ],
   }),
   component: PricingPage,
@@ -20,7 +20,7 @@ const tiers = [
   {
     name: "Starter Consultation",
     price: "3,500",
-    desc: "Single session — assessment and personalized recommendations.",
+    desc: "A single in-depth session covering full nutritional assessment, personalized recommendations and a clear roadmap you can begin acting on immediately.",
     features: ["1-hour consultation", "Personalized assessment", "Initial meal guidance", "Email follow-up"],
     cta: "Book Session",
     popular: false,
@@ -28,7 +28,7 @@ const tiers = [
   {
     name: "Standard Program",
     price: "12,000",
-    desc: "Our most popular plan — full personalization and follow-up.",
+    desc: "Our most popular plan — full personalization, weekly coaching and continuous follow-up over four weeks so habits actually take hold.",
     features: [
       "Personalized assessment",
       "Custom meal planning",
@@ -44,7 +44,7 @@ const tiers = [
     name: "Group Package",
     price: "10,800",
     perPerson: true,
-    desc: "Up to 4 people — 10% discount per person.",
+    desc: "Bring up to four family members, friends or colleagues into a shared program — same personalized care, with a 10% discount per person.",
     features: [
       "Everything in Standard",
       "Group of up to 4",
@@ -66,8 +66,8 @@ function PricingPage() {
           <h1 className="mt-2 text-4xl font-semibold md:text-5xl">
             Simple, premium <span className="text-gradient-brand">programs</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Transparent pricing. Personalized care. No hidden fees.
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            Transparent pricing, deeply personalized care and absolutely no hidden fees. Every Lotus program includes your full assessment, custom meal planning and direct access to your nutritionist throughout — pick the format that fits your goals and we'll handle the rest.
           </p>
         </div>
       </section>
