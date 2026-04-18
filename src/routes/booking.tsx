@@ -12,7 +12,7 @@ export const Route = createFileRoute("/booking")({
     program: typeof search.program === "string" ? search.program : undefined,
   }),
   head: () => ({
-    meta: [{ title: "Book a Session — Body Wise" }],
+    meta: [{ title: "Book a Session — Lotus" }],
   }),
   component: Booking,
 });
@@ -65,7 +65,7 @@ function Booking() {
     <SiteLayout>
       <section className="container-px mx-auto max-w-3xl py-12">
         <h1 className="text-3xl font-semibold md:text-4xl">Book your session</h1>
-        <p className="mt-1 text-muted-foreground">A few quick steps to get you on the calendar.</p>
+        <p className="mt-1 leading-relaxed text-muted-foreground">A few quick steps to get you on the calendar — pick your program, choose a time that works for you and we'll send a confirmation straight to your inbox.</p>
 
         {/* Stepper */}
         <ol className="mt-8 flex items-center gap-2">

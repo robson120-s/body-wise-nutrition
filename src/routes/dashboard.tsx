@@ -7,7 +7,7 @@ import { Calendar, BookOpen, MessageCircle, TrendingUp, Activity, Target } from 
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
-    meta: [{ title: "Dashboard — Body Wise" }],
+    meta: [{ title: "Dashboard — Lotus" }],
   }),
   component: Dashboard,
 });
@@ -20,7 +20,7 @@ function Dashboard() {
           <div>
             <p className="text-sm text-muted-foreground">Welcome back,</p>
             <h1 className="text-3xl font-semibold md:text-4xl">Selam 👋</h1>
-            <p className="mt-1 text-muted-foreground">Here's a snapshot of your current program.</p>
+            <p className="mt-1 leading-relaxed text-muted-foreground">Here's a snapshot of your current program — your progress, upcoming session and quick actions to keep momentum going between coaching calls.</p>
           </div>
           <Button asChild variant="brand">
             <Link to="/booking">Book a session</Link>

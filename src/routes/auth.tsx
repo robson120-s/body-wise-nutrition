@@ -15,8 +15,8 @@ export const Route = createFileRoute("/auth")({
   }),
   head: () => ({
     meta: [
-      { title: "Login or Sign Up — Body Wise" },
-      { name: "description", content: "Sign in to your Body Wise account or create a new one to start your nutrition journey." },
+      { title: "Login or Sign Up — Lotus" },
+      { name: "description", content: "Sign in to your Lotus account or create a new one to start your personalized nutrition journey." },
     ],
   }),
   component: AuthPage,
@@ -43,8 +43,8 @@ function AuthPage() {
         <Card className="w-full border-border/60 p-8 shadow-elevated">
           <div className="flex flex-col items-center text-center">
             <Logo />
-            <h1 className="mt-6 text-2xl font-semibold">Welcome to Body Wise</h1>
-            <p className="mt-1 text-sm text-muted-foreground">Your personalized nutrition starts here.</p>
+            <h1 className="mt-6 text-2xl font-semibold">Welcome to Lotus</h1>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Your personalized nutrition journey starts here. Sign in to manage your program, track progress and stay connected with your nutritionist.</p>
           </div>
 
           <Tabs defaultValue="login" className="mt-8">
