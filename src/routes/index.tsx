@@ -8,10 +8,10 @@ import heroImg from "@/assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Body Wise — Personalized Nutrition for Every Body" },
-      { name: "description", content: "Premium personalized nutrition plans for fitness, women's health and medical conditions. Science-based coaching by certified nutritionists." },
-      { property: "og:title", content: "Body Wise — Personalized Nutrition" },
-      { property: "og:description", content: "Transform your health through smart, personalized nutrition." },
+      { title: "Lotus — Personalized Nutrition for Every Body" },
+      { name: "description", content: "Premium personalized nutrition coaching for fitness, women's health and medical conditions. Science-based plans designed and followed up by certified nutritionists." },
+      { property: "og:title", content: "Lotus — Personalized Nutrition" },
+      { property: "og:description", content: "Transform your health through smart, personalized nutrition coaching with Lotus." },
     ],
   }),
   component: HomePage,
@@ -21,28 +21,28 @@ const categories = [
   {
     icon: Dumbbell,
     title: "Fitness Nutrition",
-    desc: "Bulking and muscle gain plans engineered around your training.",
+    desc: "Strategic bulking, cutting and performance plans engineered around your training schedule, recovery needs and body composition goals. Whether you're a beginner building a foundation or an athlete preparing for competition, every macro is calibrated for measurable progress.",
     cat: "fitness",
   },
   {
     icon: Heart,
     title: "Women's Health",
-    desc: "Preconception, pregnancy, lactation and child nutrition support.",
+    desc: "Comprehensive nutrition support across every life stage — from preconception and pregnancy through lactation and child nutrition. Our plans honor the unique hormonal, nutrient and emotional demands women face, with continuous coaching that grows with you.",
     cat: "women",
   },
   {
     icon: Stethoscope,
     title: "Medical Nutrition",
-    desc: "Evidence-based plans for diabetes, hypertension and more.",
+    desc: "Evidence-based clinical nutrition for diabetes, hypertension, weight management and more. We work alongside your medical team to translate lab results into practical, sustainable food strategies that improve your numbers and quality of life.",
     cat: "medical",
   },
 ] as const;
 
 const features = [
-  { icon: Sparkles, title: "Personalized Plans", desc: "Built around your body, lifestyle and goals." },
-  { icon: UserCheck, title: "Continuous Follow-up", desc: "Weekly check-ins and ongoing adjustments." },
-  { icon: Activity, title: "Science-Based Approach", desc: "Grounded in current clinical evidence." },
-  { icon: LineChart, title: "Measurable Results", desc: "Clear metrics to track your progress." },
+  { icon: Sparkles, title: "Personalized Plans", desc: "Every plan is built from the ground up around your body composition, lifestyle, food preferences and personal goals — never a recycled template." },
+  { icon: UserCheck, title: "Continuous Follow-up", desc: "Weekly check-ins, real-time messaging support and ongoing plan adjustments mean you're never left guessing between sessions." },
+  { icon: Activity, title: "Science-Based Approach", desc: "Every recommendation is grounded in current clinical evidence and reviewed against the latest peer-reviewed nutrition research." },
+  { icon: LineChart, title: "Measurable Results", desc: "We track meaningful metrics — body composition, lab markers, energy, adherence — so progress is visible, honest and sustained." },
 ];
 
 const testimonials = [
@@ -65,8 +65,8 @@ function HomePage() {
               Transform Your Health Through{" "}
               <span className="text-gradient-brand">Smart Nutrition</span>
             </h1>
-            <p className="max-w-xl text-lg text-muted-foreground">
-              Personalized nutrition plans tailored to your body, lifestyle and goals — guided by certified nutritionists who care about your outcomes.
+            <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
+              Lotus delivers personalized nutrition plans tailored to your body, lifestyle and goals — guided by certified nutritionists who follow you every step of the way. From your first assessment to long-term lifestyle change, we make eating well feel simple, sustainable and genuinely yours.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Button asChild size="lg" variant="hero">
@@ -104,8 +104,8 @@ function HomePage() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">Our Focus</p>
           <h2 className="mt-2 text-3xl font-semibold md:text-4xl">Programs for every stage of life</h2>
-          <p className="mt-3 text-muted-foreground">
-            Specialized nutrition coaching across three core areas — built on clinical expertise and personalized care.
+          <p className="mt-3 leading-relaxed text-muted-foreground">
+            Lotus offers specialized nutrition coaching across three core areas — fitness performance, women's health, and medical nutrition. Each track is built on deep clinical expertise, personalized assessment and ongoing support, so the plan you start today continues to evolve with you.
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -131,8 +131,11 @@ function HomePage() {
       <section className="bg-muted/40 py-20 md:py-24">
         <div className="container-px mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">Why Body Wise</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary">Why Lotus</p>
             <h2 className="mt-2 text-3xl font-semibold md:text-4xl">A wiser way to eat well</h2>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              We combine the rigor of clinical nutrition with the warmth of a coach who actually listens. The result is a program that fits your real life — your kitchen, your schedule, your culture — and produces results you can feel and measure.
+            </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((f) => (
@@ -173,8 +176,8 @@ function HomePage() {
         <div className="relative overflow-hidden rounded-3xl bg-gradient-brand p-10 text-center shadow-elevated md:p-16">
           <div className="relative mx-auto max-w-2xl text-primary-foreground">
             <h2 className="text-3xl font-semibold md:text-4xl">Start your health journey today</h2>
-            <p className="mt-3 text-primary-foreground/85">
-              A personalized plan, expert guidance and consistent follow-up — all in one program.
+            <p className="mt-3 leading-relaxed text-primary-foreground/85">
+              A personalized plan, expert clinical guidance and consistent follow-up — all in one program. Take the first step toward sustainable, measurable health change with a team that's invested in your outcome.
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <Button asChild size="lg" className="bg-background text-primary hover:bg-background/90">
