@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-4">
             <Logo />
-            <p className="text-sm text-muted-foreground">
-              Personalized nutrition plans built around your body, lifestyle and goals.
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Lotus is a premium nutrition coaching practice built around personalized plans, clinical expertise and continuous follow-up. We help you transform daily habits into measurable, lasting health outcomes — guided by certified nutritionists who genuinely care about your journey.
             </p>
           </div>
           <div>
@@ -42,7 +42,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} Body Wise. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Lotus Nutrition. All rights reserved.</p>
           <p>Crafted with care for your health journey.</p>
         </div>
       </div>

@@ -11,10 +11,10 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Body Wise" },
-      { name: "description", content: "Get in touch with Body Wise. Call us, message on WhatsApp or Telegram, or send us an email." },
-      { property: "og:title", content: "Contact Body Wise" },
-      { property: "og:description", content: "Speak to a certified nutritionist today." },
+      { title: "Contact — Lotus" },
+      { name: "description", content: "Get in touch with Lotus. Call us, message on WhatsApp or Telegram, or send us an email — a certified nutritionist will respond within one business day." },
+      { property: "og:title", content: "Contact Lotus" },
+      { property: "og:description", content: "Speak to a certified nutritionist today and start building your personalized plan." },
     ],
   }),
   component: ContactPage,
@@ -29,8 +29,8 @@ function ContactPage() {
           <h1 className="mt-2 text-4xl font-semibold md:text-5xl">
             Speak with a <span className="text-gradient-brand">nutritionist today</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            The fastest way to get started is a quick phone call.
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            The fastest way to get started is a quick phone call — we'll listen, answer your questions and help you choose the right program. Prefer to write? WhatsApp, Telegram and email all reach us directly, and we respond within one business day.
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ function ContactPage() {
             </a>
             <p className="mt-3 text-sm opacity-90">Available Mon–Sat, 8am – 7pm</p>
             <Button asChild size="lg" className="mt-6 bg-background text-primary hover:bg-background/90">
-              <a href="tel:+251911000000">Call Body Wise</a>
+              <a href="tel:+251911000000">Call Lotus</a>
             </Button>
           </Card>
 
@@ -80,7 +80,7 @@ function ContactPage() {
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <Card className="border-border/60 p-8 shadow-soft">
             <h2 className="text-2xl font-semibold">Send us a message</h2>
-            <p className="mt-1 text-sm text-muted-foreground">We'll respond within one business day.</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Tell us a little about your goals and we'll respond within one business day with next steps and the program that fits best.</p>
             <form
               className="mt-6 space-y-4"
               onSubmit={(e) => {

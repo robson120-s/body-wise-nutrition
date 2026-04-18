@@ -8,10 +8,10 @@ import { categoryMeta, services, type ServiceCategory } from "@/data/services";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Body Wise" },
-      { name: "description", content: "Explore Body Wise nutrition programs across fitness, women's health and medical nutrition categories." },
-      { property: "og:title", content: "Body Wise Services" },
-      { property: "og:description", content: "Categorized nutrition programs for every life stage and goal." },
+      { title: "Services — Lotus" },
+      { name: "description", content: "Explore Lotus nutrition programs across fitness, women's health and medical nutrition — each plan personalized, clinically grounded and continuously coached." },
+      { property: "og:title", content: "Lotus Services" },
+      { property: "og:description", content: "Categorized nutrition programs for every life stage and health goal." },
     ],
   }),
   component: ServicesPage,
@@ -33,8 +33,8 @@ function ServicesPage() {
           <h1 className="mt-2 text-4xl font-semibold md:text-5xl">
             Nutrition coaching, <span className="text-gradient-brand">made for you</span>
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Choose from specialized programs across three core categories. Each plan is personalized to your body, goals and lifestyle.
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            Choose from specialized programs across three core categories. Each plan is fully personalized to your body, goals and lifestyle — and supported by weekly check-ins, ongoing adjustments and direct access to your nutritionist throughout the program.
           </p>
         </div>
       </section>
