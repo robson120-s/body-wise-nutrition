@@ -14,12 +14,12 @@ export const Route = createFileRoute("/services/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.service.title} — Body Wise` },
+          { title: `${loaderData.service.title} — Lotus` },
           { name: "description", content: loaderData.service.short },
-          { property: "og:title", content: `${loaderData.service.title} — Body Wise` },
+          { property: "og:title", content: `${loaderData.service.title} — Lotus` },
           { property: "og:description", content: loaderData.service.short },
         ]
-      : [{ title: "Service — Body Wise" }],
+      : [{ title: "Service — Lotus" }],
   }),
   notFoundComponent: () => (
     <SiteLayout>
@@ -54,7 +54,10 @@ function ServiceDetail() {
             {categoryMeta[service.category].label}
           </p>
           <h1 className="mt-2 text-4xl font-semibold md:text-5xl">{service.title}</h1>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">{service.description}</p>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">{service.description}</p>
+          <p className="mt-3 max-w-2xl leading-relaxed text-muted-foreground">
+            Every Lotus program begins with a thorough one-on-one assessment so your plan reflects your body, preferences and goals from day one. From there, you'll receive personalized meal guidance, weekly check-ins and direct messaging support so adjustments happen in real time — not weeks later.
+          </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button asChild size="lg" variant="hero">
               <Link to="/auth" search={{ redirect: `/booking?program=${service.slug}` }}>
@@ -94,7 +97,9 @@ function ServiceDetail() {
 
         <div className="mt-16 rounded-3xl bg-gradient-brand p-10 text-center text-primary-foreground shadow-elevated md:p-14">
           <h2 className="text-3xl font-semibold">Ready to begin?</h2>
-          <p className="mt-2 text-primary-foreground/85">Sign in to purchase this program and start your plan.</p>
+          <p className="mt-2 leading-relaxed text-primary-foreground/85">
+            Sign in to purchase this program and unlock your personalized assessment, custom meal plan and continuous coaching support. Your nutritionist will reach out within one business day to schedule your kickoff session.
+          </p>
           <Button asChild size="lg" className="mt-6 bg-background text-primary hover:bg-background/90">
             <Link to="/auth" search={{ redirect: `/booking?program=${service.slug}` }}>
               Purchase Program
